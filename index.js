@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 const core = require('@actions/core')
-const { context, GitHub } = require('@actions/github')
+const { context, getOctokit } = require('@actions/github')
 
-async function run() {
+async function run () {
   const trigger = core.getInput('trigger', { required: true })
 
   let triggered = false
   const reaction = core.getInput('reaction')
-  const { GITHUB_TOKEN } = process.env
-  if (reaction && !GITHUB_TOKEN) {
-    core.setFailed('If "reaction" is supplied, GITHUB_TOKEN is required')
+  const ghToken = core.getInput('ghToken')
+  if (reaction && !ghToken) {
+    core.setFailed('If "reaction" is supplied, "ghToken" is required')
     return
   }
 
@@ -40,12 +40,13 @@ async function run() {
 
     const { owner, repo } = context.repo
 
-    const client = new GitHub(GITHUB_TOKEN)
-    await client.reactions.createForIssueComment({
+    const octokit = getOctokit(ghToken)
+
+    await octokit.reactions.createForIssueComment({
       owner,
       repo,
       comment_id: context.payload.comment.id,
-      content: reaction,
+      content: reaction
     })
   }
 }
