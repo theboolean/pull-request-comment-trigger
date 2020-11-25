@@ -43,6 +43,7 @@ And if you specify a reaction, you have to provide the `GITHUB_TOKEN` env vbl.
 | trigger | Yes | The string to look for in pull-request descriptions and comments. For example "#build/android". |
 | prefix_only | No (default 'false') | If 'true', the trigger must match the start of the comment. |
 | reaction | No (default '') | If set, the specified emoji "reaction" is put on the comment to indicate that the trigger was detected. For example, "rocket". |
+| gh_token | No (default '') | If "reaction" is set, a GITHUB_TOKEN must be set to allow reacting to comments. |
 
 
 ## Outputs
@@ -50,4 +51,3 @@ And if you specify a reaction, you have to provide the `GITHUB_TOKEN` env vbl.
 | Output | Description |
 | ------ | ----------- |
 | triggered | 'true' or 'false' depending on if the trigger phrase was found. |
-| comment_body | The comment body. |
