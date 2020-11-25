@@ -4,8 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dist": "ncc build -m index.js",
-    "lint": "eslint index.js"
+    "build": "ncc build -m index.js",
+    "lint": "eslint index.js",
+    "preversion": "yarn lint && yarn build",
+    "version": "git add dist/"
   },
   "keywords": [],
   "author": "",
