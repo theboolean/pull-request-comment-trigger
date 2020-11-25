@@ -33,8 +33,8 @@ jobs:
         if: steps.check.outputs.triggered == 'true'
 ```
 
-Reaction must be one of the reactions here: https://developer.github.com/v3/reactions/#reaction-types
-And if you specify a reaction, you have to provide the `GITHUB_TOKEN` env vbl.
+`reaction` must be one of the reactions here: https://developer.github.com/v3/reactions/#reaction-types
+If you specify a reaction, you have to provide a `GITHUB_TOKEN` via `gh_token` variable.
 
 ## Inputs
 
