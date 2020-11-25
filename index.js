@@ -45,12 +45,12 @@ async function run() {
       owner,
       repo,
       comment_id: context.payload.comment.id,
-      content: reaction
+      content: reaction,
     })
   }
 }
 
-run().catch(err => {
+run().catch((err) => {
   console.error(err)
   core.setFailed('Unexpected error')
 })
