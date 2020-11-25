@@ -1,8 +1,14 @@
 {
   "name": "pull-request-comment-trigger",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Trigger actions via a comment keyword in a Pull request",
-  "keywords": ["workflow", "action", "trigger", "pull request", "comment"],
+  "keywords": [
+    "workflow",
+    "action",
+    "trigger",
+    "pull request",
+    "comment"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build -m index.js",

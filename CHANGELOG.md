@@ -1,3 +1,18 @@
+## [0.3.2](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.3.1...v0.3.2) (2020-11-25)
+
+
+### Docs
+
+* Update package description ([6fef0c8](https://github.com/theboolean/pull-request-comment-trigger/commit/6fef0c80ef8acef034b08ed96230313e633c8e95))
+* Update readme ([19b89dc](https://github.com/theboolean/pull-request-comment-trigger/commit/19b89dc43c6e51bbd67e520cea07857f7fa32ffa))
+* Update README ([9e11254](https://github.com/theboolean/pull-request-comment-trigger/commit/9e1125447ab5ab3750c4ea4a570bab52628c02f0))
+
+### FIx
+
+* Prefix only option is now working properly ([1beec09](https://github.com/theboolean/pull-request-comment-trigger/commit/1beec090c39c159463c86ae6ad247ba963b2c664))
+
+
+
 ## [0.3.1](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.3.0...v0.3.1) (2020-11-25)
 
 
