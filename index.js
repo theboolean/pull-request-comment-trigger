@@ -24,9 +24,14 @@ async function run () {
 
     // Check that comment contains the `trigger` word
     const prefixOnly = core.getInput('prefix_only') === 'true'
-    if ((prefixOnly && body.startsWith(trigger)) || body.includes(trigger)) {
+    if (prefixOnly && body.startsWith(trigger)) {
+      // Trigger is present at the start of the string
+      triggered = true
+    } else if (!prefixOnly && body.includes(trigger)) {
+      // Trigger is present somewhere in the string
       triggered = true
     }
+    // else trigger was not found
   }
 
   core.setOutput('triggered', triggered)
