@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dist": "ncc build index.js"
+    "dist": "ncc build -m index.js"
   },
   "repository": {
     "type": "git",
