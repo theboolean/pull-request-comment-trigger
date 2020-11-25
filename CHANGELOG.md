@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.3.0...v0.3.1) (2020-11-25)
+
+
+### Fix
+
+* Add new parameter declaration ([d95d908](https://github.com/theboolean/pull-request-comment-trigger/commit/d95d90828a1df2459c5705be563234e93a9a43f4))
+
+
+
 # [0.3.0](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.2.0...v0.3.0) (2020-11-25)
 
 
