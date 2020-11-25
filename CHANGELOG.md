@@ -1,3 +1,25 @@
+# [0.3.0](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.2.0...v0.3.0) (2020-11-25)
+
+
+### Build
+
+* Automatize building dist during versioning ([ad57222](https://github.com/theboolean/pull-request-comment-trigger/commit/ad57222a4e5e79242036978b952cf16458098bc1))
+* Create changelog during versioning ([a234874](https://github.com/theboolean/pull-request-comment-trigger/commit/a234874533987265a08cc4f9f6d2f3b0ce895148))
+
+### Docs
+
+* Add first cumulative changelog ([f92c93e](https://github.com/theboolean/pull-request-comment-trigger/commit/f92c93e1f431917b050c054516ce34acbedf0a1c))
+
+### Fix
+
+* Use new shape of @actions/github ([5adc760](https://github.com/theboolean/pull-request-comment-trigger/commit/5adc7601d6102c33a2d7bc9b8337f30940520cef))
+
+### Style
+
+* Add linter ([a9a426f](https://github.com/theboolean/pull-request-comment-trigger/commit/a9a426f5a712a9b47b6b51d730dc4521430c27e7))
+
+
+
 # [0.2.0](https://github.com/theboolean/pull-request-comment-trigger/compare/v0.1.0...v0.2.0) (2020-11-25)
 
 
