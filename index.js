@@ -8,7 +8,7 @@ async function run () {
 
   let triggered = false
   const reaction = core.getInput('reaction')
-  const ghToken = core.getInput('ghToken')
+  const ghToken = core.getInput('gh_token')
   if (reaction && !ghToken) {
     core.setFailed('If "reaction" is supplied, "ghToken" is required')
     return
