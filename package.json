@@ -6,17 +6,9 @@
   "scripts": {
     "dist": "ncc build -m index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaredly/actions-testbed.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaredly/actions-testbed/issues"
-  },
-  "homepage": "https://github.com/jaredly/actions-testbed#readme",
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^1.1.0"
