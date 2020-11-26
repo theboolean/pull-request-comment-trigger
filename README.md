@@ -22,7 +22,7 @@ on:
 ```
 in this case, for example, the workflow will trigger every time a `push` is performed, and when a comment is created.
 
-The check of the "trigger word" is performed only in case of a comment created event. Workflow will be considered triggered in any other type of event.
+The check of the "trigger word" is performed only in case of a comment created event. The workflow will be considered triggered in any other type of event.
 
 You can use the action in your jobs like this:
 
