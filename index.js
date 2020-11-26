@@ -10,7 +10,7 @@ async function run () {
   const reaction = core.getInput('reaction')
   const ghToken = core.getInput('gh_token')
   if (reaction && !ghToken) {
-    core.setFailed('If "reaction" is supplied, "ghToken" is required')
+    core.setFailed('If "reaction" is supplied, "gh_token" is required')
     return
   }
 
