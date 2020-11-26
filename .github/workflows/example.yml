@@ -6,38 +6,37 @@ on:
     types: [created]
 
 jobs:
-  hello:
+  simple:
     runs-on: ubuntu-latest
     steps:
-      - uses: khan/pull-request-comment-trigger@master
+      - uses: theboolean/pull-request-comment-trigger@v0.3.2
         id: check
         with:
-          trigger: '#hello'
+          trigger: '/simple'
       - run: 'echo Found it!'
         if: steps.check.outputs.triggered == 'true'
 
-  eyes:
+  with_reaction:
     runs-on: ubuntu-latest
     steps:
-      - uses: khan/pull-request-comment-trigger@master
+      - uses: theboolean/pull-request-comment-trigger@v0.3.2
         id: check
         with:
           trigger: '#look'
-          reaction: eyes
-        env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          reaction: 'eyes'
+          gh_token: '${{ secrets.GITHUB_TOKEN }}'
       - run: 'echo Found it!'
         if: steps.check.outputs.triggered == 'true'
 
-  rocket:
+  prefix_only:
     runs-on: ubuntu-latest
     steps:
-      - uses: khan/pull-request-comment-trigger@master
+      - uses: theboolean/pull-request-comment-trigger@v0.3.2
         id: check
         with:
+          prefix_only: 'true'
           trigger: '#deploy'
-          reaction: rocket
-        env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       - run: 'echo Found it!'
+        if: steps.check.outputs.triggered == 'true'
+      - run: 'echo Another step of the deploy job!'
         if: steps.check.outputs.triggered == 'true'

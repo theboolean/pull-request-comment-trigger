@@ -29,7 +29,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: theboolean/pull-request-comment-trigger@master
+      - uses: theboolean/pull-request-comment-trigger@v0.3.2
         id: check_comment_trigger
         with:
           prefix_only: 'true'
